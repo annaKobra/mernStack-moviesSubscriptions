@@ -8,9 +8,7 @@ class MembersService {
     if (isAuth) {
       const res = await axios.get(API_URL);
       return res.data;
-    } else {
-      sessionStorage.clear();
-    }
+    } 
   }
 
   async getMember(id) {
